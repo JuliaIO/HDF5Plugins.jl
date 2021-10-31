@@ -1,7 +1,13 @@
-name = "H5Zlz4"
+name = "HDF5Plugins"
 uuid = "1e8e1a9c-ba05-491d-aab9-db7c9310f606"
 authors = ["Mark Kittisopikul <kittisopikulm@janelia.hhmi.org> and contributors"]
 version = "0.1.0"
+
+[deps]
+CodecBzip2 = "523fee87-0ab8-5b00-afb7-3ecf72e48cfd"
+CodecLz4 = "5ba52731-8f18-5e0d-9241-30f10d1ec561"
+CodecZstd = "6b39b394-51ab-5f42-8807-6242bab2b4c2"
+HDF5 = "f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f"
 
 [compat]
 julia = "1"
