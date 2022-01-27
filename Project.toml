@@ -1,20 +1,22 @@
 name = "HDF5Plugins"
 uuid = "1e8e1a9c-ba05-491d-aab9-db7c9310f606"
 authors = ["Mark Kittisopikul <kittisopikulm@janelia.hhmi.org> and contributors"]
-version = "0.15.6"
+version = "0.16.0"
 
 [deps]
-CodecBzip2 = "523fee87-0ab8-5b00-afb7-3ecf72e48cfd"
-CodecLz4 = "5ba52731-8f18-5e0d-9241-30f10d1ec561"
-CodecZstd = "6b39b394-51ab-5f42-8807-6242bab2b4c2"
+H5Zblosc = "c8ec2601-a99c-407f-b158-e79c03c2f5f7"
+H5Zbzip2 = "094576f2-1e46-4c84-8e32-c46c042eaaa2"
+H5Zlz4 = "eb20ec05-5464-47b5-ba41-098e3c1068a3"
+H5Zzstd = "f6f2d980-1ec6-471c-a70d-0270e22f1103"
 HDF5 = "f67ccb44-e63f-5c2f-98bd-6dc0ccc4ba2f"
 
 [compat]
-HDF5 = "0.15"
-CodecZstd = "0.7"
-CodecLz4 = "0.4"
-CodecBzip2 = "0.7"
+HDF5 = "0.16"
 julia = "1"
+H5Zblosc = "0.1"
+H5Zbzip2 = "0.1"
+H5Zlz4 = "0.1"
+H5Zzstd = "0.1"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"

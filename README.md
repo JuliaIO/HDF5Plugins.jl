@@ -1,14 +1,19 @@
 # HDF5Plugins
 
-This package implements compression, decompression plugins, and other filter plugins for [HDF5.jl](https://github.com/JuliaIO/HDF5.jl). Currently bzip2, lz4, and zstd compression codecs are supported using [CodecBzip2.jl](https://github.com/JuliaIO/CodecBzip2.jl), [CodecLZ4.jl](https://github.com/JuliaIO/CodecLz4.jl), and [CodecZstd.jl](https://github.com/JuliaIO/CodecZstd.jl). Default filters as well as Blosc compression is currently implemented in HDF5.jl.
+This package formerly implemented compression, decompression plugins, and other filter plugins for [HDF5.jl](https://github.com/JuliaIO/HDF5.jl). bzip2, lz4, and zstd compression codecs were supported using [CodecBzip2.jl](https://github.com/JuliaIO/CodecBzip2.jl), [CodecLZ4.jl](https://github.com/JuliaIO/CodecLz4.jl), and [CodecZstd.jl](https://github.com/JuliaIO/CodecZstd.jl).
 
 The plugins themselves, which implement glue code between HDF5 and the individual codecs, are implemented in Julia after having been ported from C.
 
+Currently, the main contents of this package are now part of HDF5.jl as of version 0.16.0. This package now serves mainly as a convenience package to load all known HDF5 compression plugins implemented in Julia.
+
 ## Relationship to HDF5.jl
 
-These filters are meant to be used with the 0.15 branch of HDF5.jl and was initially created and tested with HDF5.jl version 0.15.6.
+The contents of this package were merged into the 0.16 branch of HDF5.jl and released as independent subdirectory packages.
 
-The contents of this package will be adapted and merged into the 0.16 branch of HDF5.jl.
+* [H5Zblosc.jl](https://github.com/JuliaIO/HDF5.jl/tree/master/filters/H5Zblosc)
+* [H5Zbzip2.jl](https://github.com/JuliaIO/HDF5.jl/tree/master/filters/H5Zbzip2)
+* [H5Zlz4.jl](https://github.com/JuliaIO/HDF5.jl/tree/master/filters/H5Zlz4)
+* [H5Zzstd.jl](https://github.com/JuliaIO/HDF5.jl/tree/master/filters/H5Zzstd)
 
 ## See Also
 
